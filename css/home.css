@@ -1,35 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/* html, body {
-    height: 100%;
-} */
-
 body {
     background-color: dodgerblue;
     font-family: "Montserrat", system-ui;
-    /* display: flex;
-    flex-direction: column; */
+    display: flex;
+    flex-direction: column;
 }
 
 header {
     background-color: #26333d;
     height: 100px;
     width: 100%;
-    color: white;
-}
-
-footer {
-    background-color: #26333d;
-    width: 100%;
-    /* height: 100px; */
-
-    display: flex;
-    align-items: center;
-
 }
 
 .Layout-grid {
@@ -46,6 +33,8 @@ footer {
     height: 100%;
 }
 
+
+
 header nav {
     display: flex;
     justify-content: space-between;
@@ -53,6 +42,61 @@ header nav {
     width: 350px;
     height: 100%;
     /* border: 3px solid snow; */
+}
+
+/* Fim do menu */
+
+/* banner  */
+
+#banner {
+    background-color: #4969df;
+    width: 100%;
+    height: 570px;
+}
+.banner-flex {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid yellow; */
+}
+.banner-info{
+    height: 300px;
+    width: 450px;
+    /* border: 2px solid rgb(0, 255, 8); */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#banner img {
+    height: 500px;
+    width: 500px;
+    align-self: flex-end;
+}
+#banner h1 {
+    color: white;
+    font-size: 30px;
+}
+.banner-info p {
+    color: white;
+    font-size: 20px;
+}
+.banner-info button {
+    background-color: #26333d;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    width: 180px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    text-transform: uppercase;
+}
+
+/* Fim do banner */
+nav a:hover {
+    color: #2FD6CB;
 }
 
 header nav a {
@@ -76,17 +120,9 @@ header nav a {
     font-family: "Montserrat", system-ui;
     text-decoration: underline aqua;
 }
-/* .claudio {
-    border-color: aqua;
-     box-sizing: border-box; 
-    width: 20%;
-    margin-left: 40%;
-    margin-bottom: 25%;
-    margin: 2px solid aqua;
-}  */
 
 .Bibliotec-flex {
-    /* width: 992px; */
+    width: 992px;
     justify-content: space-between;
     display: flex;
     align-items: center;
@@ -101,7 +137,7 @@ header nav a {
     flex-wrap: wrap;
     padding: 20px;
     text-align: center;
-    
+
     width: 250px;
     height: 70%;
     border-radius: 25px;
@@ -132,18 +168,59 @@ header nav a {
     margin-top: 40px;
     font-size: 20px;
 }
+#totalmente-gratis {
+    background-color: #3691d8;
+    height: 365px;
+}
+.totalmente-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.totalmente-flex img {
+    width: 490px;
+}
+.texto-gratis {
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    align-items: center;
+    width: 450px;
+    color: white;
+}
+.texto-gratis h2 {
+    font: 30px;
+    margin-bottom: 20px;
+}
+.texto-gratis p {
+    font-size: 25px;
+    margin-bottom: 20px;
 
+}
+.texto-gratis button {
+    background-color: #26333d;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    width: 180px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    text-transform: uppercase;
+}
 .Top-4 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 992px;
 }
 
 .livro {
     display: flex;
     justify-content: center;
     width: 100%;
-    /* height: 450px; */
+    height: 700px;
     margin-top: 0;
     /* border: 2px solid salmon; */
     background-color: whitesmoke;
@@ -155,71 +232,130 @@ header nav a {
     margin-top: 50px;
     margin-bottom: 50px;
     border-bottom: aqua;
+    font-size: 42px;
+    padding: 10px;
     text-decoration: underline aqua;
 }
-.Top-4{
-    max-width: 992px;
-}
-.Top-4 h2, .Top-4 p {
-    padding: 5px;
+
+.recomendados {
+    width: 203px;
+    height: 500px;
     text-align: center;
 }
-.Top-4 h2 {
-    text-transform: uppercase;
-}
- .Top-4 article {
-    width: 225px;
+
+.recomendados img {
+    width: 203px;
+    height: 325px;
 }
 
-.Top-4 article img {
-    width: 100%;
+.recomendados h3 {
+    margin-top: 20px;
+    font-size: 25px;
+    margin-bottom: 20px;
 }
-.footer-flex {
+
+.recomendados p {
+    font-size: 20px;
+}
+
+.recomendados-bold {
+    font-weight: bold;
+}
+
+footer {
+    background-color: #26333d;
+    width: 100%;
+    height: 800px;
+    color: white;
+}
+
+footer hr {
+    width: 100%;
+    height: 0;
+    color: #2FD6CB;
+}
+
+.organizacao {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.logos {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    /* border: 2px solid red; */
+}
+
+.logos img {
+    width: 175px;
+    height: 100%;
+    margin-bottom: 30px;
+}
+
+.info {
     display: flex;
     justify-content: space-between;
+    height: 100%;
+    width: 50%;
+    /* border: 2px solid red; */
+}
+
+.info section {
+    margin-left: 40px;
+}
+
+.info p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.info h1 {
+    font-size: 20px;
+    color: #2FD6CB;
+    font-weight: 300;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.apps {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    /* border: 2px solid red; */
+}
+
+.apps img {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+}
+
+.apps h1 {
+    color: #2FD6CB;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.barra {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
     padding-top: 30px;
     padding-bottom: 30px;
 }
-.conteudo {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    
-}
-.ibagens {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-}
-.conteudo nav {
-    width: 500px;
-    display: flex;
-    flex-wrap: wrap;  
-    color: #e9f0ef;
-}
-.lado1 {
-    width: 50%;
-}
-.lado2 {
-    width: 50%;
-}
-.lado1 a {
+
+.barra a {
     text-decoration: none;
-    color: aqua;
+    color: white;
 }
-.lado2 a {
-    text-decoration: none;
-    color: aqua;
-    
-}
-.baixo {
-    width: 70%;
-    height: 25px;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-}
-.baixo a {
-    text-decoration: none;
-    color: aqua;    
+
+section a:hover {
+    color: #2FD6CB;
 }
